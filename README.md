@@ -32,7 +32,7 @@ Afin de moderniser l'interface, j'intègre quelques animations avec la librairie
 
 ### Données
 
-Afin de garantir la maintenabilité de l'application et de garantir une cohérence des données, l'ensemble des données est centralisée dans un store **Redux**. C'est depuis le store que sont faites les consommations d'API grâce au middleware **Redux-thunk** et à la librairie **Axios**
+Afin de garantir la maintenabilité de l'application et de garantir une cohérence des données, l'ensemble des données est centralisée dans un store **Redux**. C'est depuis le store que sont faites les consommations d'API grâce au middleware **Redux-thunk** qui permet d'effectuer des tâches lorsqu'une action est dispatchée. La librairie **Axios** permet d'envoyer des requêtes asynchrones. 
 
 Afin d'offrir une meilleure expérience à l'utilisateur, le panier est enregistré dans le **localStorage** à chaque fois qu'un livre y est ajouté ou retiré.
 
