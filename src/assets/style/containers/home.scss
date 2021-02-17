@@ -1,0 +1,51 @@
+.page.home {
+  @include flex(center,flex-start,column);
+  .home__hero {
+    @include flex(center,center,column);
+    padding-bottom: 80px;
+
+    .hero__title {
+      margin-top: 20vh;
+      font-family: $fontSerif;
+      font-size: 56px;
+    }
+
+    .hero__subtitle {
+      margin-top:15px;
+      font-family: $fontMain;
+      font-size: 24px;
+    }
+
+    .hero__link {
+      background-color: black;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 4px;
+      margin-top:50px;
+    }
+
+    .booklist {
+      margin-top: 50px;
+      grid-template-columns: repeat( auto-fit, minmax(15%, 1fr) );
+
+      li.booklistItem {
+        position:relative;
+
+        .overlay {
+          position: absolute;
+          top:0px;
+          left:0px;
+          background-color: transparent;
+          width: 100%;
+          height: calc(100% - 40px);
+          z-index: 2;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .seeAll {
+      margin-top: 40px;
+    }
+  }
+}

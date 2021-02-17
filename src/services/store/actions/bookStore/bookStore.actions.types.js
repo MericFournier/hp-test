@@ -1,0 +1,5 @@
+export const FETCH_BOOKS = 'FETCH_BOOKS';
+export const FETCH_BOOKS_START = 'FETCH_BOOKS_START';
+export const FETCH_BOOKS_END = 'FETCH_BOOKS_END';
+export const FETCH_BOOKS_ERROR = 'FETCH_BOOKS_ERROR';
+export const SET_BOOKS = 'SET_BOOKS';

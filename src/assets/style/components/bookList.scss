@@ -1,0 +1,23 @@
+.booklist {
+  width: 84vw;
+  max-width: 1000px;
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  grid-column-gap: 5vw;
+  grid-row-gap: 40px;
+}
+
+@media screen and ( max-width: 1024px) {
+  .booklist {
+    width: 90vw;
+    max-width: 90vw;
+    @include flex(flex-start,flex-start,column);
+    grid-column-gap: 5vw;
+    grid-row-gap: 40px;
+
+    .booklistItem {
+      width: 100%;
+    }
+  }
+}

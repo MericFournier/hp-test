@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout suite test should render with given state from Redux store 1`] = `
+<div
+  className="checkout"
+>
+  <div
+    className="checkout__detail"
+  >
+    <p
+      className="price"
+    >
+      Montant total : 
+      35
+       €
+    </p>
+    <p
+      className="offer"
+    >
+      Réduction spéciale : -
+      NaN
+       €
+    </p>
+    <p
+      className="total"
+    >
+      votre panier : 
+       €
+    </p>
+  </div>
+</div>
+`;

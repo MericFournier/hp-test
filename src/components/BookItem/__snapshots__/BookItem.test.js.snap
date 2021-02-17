@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookItem suite test should render with given state from Redux store 1`] = `
+<div
+  className="book__item"
+>
+  <a
+    className="book__wrapper"
+    href="/books/undefined"
+    onClick={[Function]}
+  >
+    <div
+      className="book__cover__container"
+    >
+      <div
+        className="book__cover__wrapper"
+      >
+        <span
+          className="book__cover lazy-load-image-background opacity"
+          style={
+            Object {
+              "backgroundImage": "",
+              "backgroundSize": "",
+              "display": "inline-block",
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          <span
+            className=""
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          />
+        </span>
+      </div>
+    </div>
+    <p
+      className="book__title"
+    >
+      Henri Potier à l'école des sorciers
+    </p>
+  </a>
+  <button
+    className="buttonCart"
+    onClick={[Function]}
+  >
+    <span
+      className="button__cart__label"
+    >
+       
+      Retirer du panier
+    </span>
+  </button>
+</div>
+`;

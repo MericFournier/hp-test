@@ -1,0 +1,58 @@
+.cart {
+
+  padding-top: 150px;
+
+  .cartlist {
+    width: 84vw;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+    grid-column-gap: 5vw;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat( auto-fit, minmax(10%, 20%) );
+  }
+
+  .checkout {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: fit-content;
+    min-width: 200px;
+    margin: 50px auto;
+    padding:10px 20px;
+    text-align:center;
+
+    .price {
+      font-size: 18px;
+      margin-top:10px;
+    }
+
+    .offer {
+      color: red;
+      margin-top:5px;
+    }
+
+    .total {
+      font-size: 22px;
+      margin-top:15px;
+    }
+  }
+
+}
+
+
+@media screen and ( max-width: 1024px) {
+  .cart {
+    .cartlist {
+      width: 90vw;
+      max-width: 90vw;
+      @include flex(flex-start,flex-start,column);
+      grid-column-gap: 5vw;
+      grid-row-gap: 40px;
+
+      .booklistItem {
+        width: 100%;
+      }
+    }
+  }
+}

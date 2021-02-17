@@ -1,0 +1,23 @@
+.page.books {
+  .booklist {
+    padding-top: 150px;
+    width: 84vw;
+    margin: 0px auto;
+    grid-template-columns: repeat( auto-fit, minmax(24%, 1fr) );
+
+    li.booklistItem {
+      position:relative;
+
+      .overlay {
+        position: absolute;
+        top:0px;
+        left:0px;
+        background-color: transparent;
+        width: 100%;
+        height: calc(100% - 40px);
+        z-index: 2;
+        cursor: pointer;
+      }
+    }
+  }
+}
