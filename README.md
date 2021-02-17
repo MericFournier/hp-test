@@ -8,6 +8,8 @@ Concevoir une application qui permet d'afficher les livres de Henri Pottier, de 
 
 ## Commandes
 
+### `npm i`
+Instale les dépendances 
 ### `npm start`
 Lance l'application en mode développement sur le port 3000
 ### `npm test`
