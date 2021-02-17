@@ -54,6 +54,12 @@ Avec la librairie **Cypress**, je valide un scénario précis afin de vérifier 
 
 Ces tests permettent de simuler les actions d'un utilisateur : cliquer, naviguer, scroller etc...
 
+#### La documentation
+
+Afin de faciliter la maintenance par d'autres développeurs, je documente certaines fonctions en respectant la norme **JSDoc**. La documentation permet de comprendre rapidement les paramètres et les retours d'une fonction. Le nommage explicite des fonctions, classes et composants permet également une lecture plus intuitive du code.
+
+
+
 
 ## Axe d'amélioration
 
