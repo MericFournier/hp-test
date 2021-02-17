@@ -32,33 +32,31 @@ Afin de moderniser l'interface, j'intègre quelques animations avec la librairie
 
 ### Données
 
-Afin de garantir la maintenabilité de l'application et de garantir une cohérence des données, l'ensemble des données est centralisée dans un store **Redux**. C'est depuis le store que sont faites les consommations d'API grâce au middleware **Redux-thunk** qui permet d'effectuer des tâches lorsqu'une action est dispatchée. La librairie **Axios** permet d'envoyer des requêtes asynchrones. 
+Afin de garantir la maintenabilité de l'application et de garantir une cohérence des données, l'ensemble des données SONT centraliséeS dans un store **Redux**. C'est depuis le store que sont effectuées les consommations d'API grâce au middleware **Redux-thunk** qui permet de déclencher des actions lorsqu'une autre est dispatchée. La librairie **Axios** permet d'envoyer des requêtes asynchrones. 
 
-Afin d'offrir une meilleure expérience à l'utilisateur, le panier est enregistré dans le **localStorage** à chaque fois qu'un livre y est ajouté ou retiré.
+Afin d'offrir une meilleure expérience à l'utilisateur, le panier est enregistré dans le **localStorage** à chaque fois qu'un livre y est ajouté ou retiré. À chaque nouvelle visite, notre utilisateur reccupère son précédent panier sans avoir à se connecter. 
 
 ### Tests
 
-J'ai effectué deux types de tests dans le but de valider mon application : 
+J'ai effectué deux types de tests dans le but de vérifier la qualité de mon application : 
 
 #### Les tests unitaires
 
-Avec les librairies **Jest** et **React Testing** je valide des tests d'intégration, qui  permettent de vérifier qu'un composant s'affiche normalement en prenant en compte ses propriétés et son état. Je valide également certaines fonctions. 
+Avec les librairies **Jest** et **React Testing** je valide des tests d'intégration, qui  permettent de vérifier qu'un composant s'affiche normalement en prenant en compte ses propriétés et son état. Je valide également certaines fonctions essentielles. 
 
 Les tests unitaires permettent également de tester mon Store Redux, qui est la partie principale de l'application. 
 
-Les tests unitaires sont plus nombreux que les tests End to End. Ils permettent de tester en profondeur tous les cas de figures sur un composant individuel. 
+Ils sont plus nombreux que les tests End to End car ils permettent de tester en profondeur tous les cas de figures sur un composant individuel en l'isolant.
 
 #### Les tests End to End
 
-Avec la librairie **Cypress**, je valide un scénario précis afin de vérifier que les composants de mon application interagissent bien entre eux et que l'utilisateur est en mesure d'effectuer certaines actions. 
+Avec la librairie **Cypress**, je valide un scénario précis afin de vérifier que les composants de mon application interagissent bien entre eux et que l'utilisateur est en mesure d'effectuer certaines actions.
 
 Ces tests permettent de simuler les actions d'un utilisateur : cliquer, naviguer, scroller etc...
 
 ### La documentation
 
 Afin de faciliter la maintenance par d'autres développeurs, je documente certaines fonctions en respectant la norme **JSDoc**. La documentation permet de comprendre rapidement les paramètres et les retours d'une fonction. Le nommage explicite des fonctions, classes et composants permet également une lecture plus intuitive du code.
-
-
 
 
 ## Axe d'amélioration
@@ -75,6 +73,12 @@ Pouvoir ajouter un livre à ses favoris sans l'ajouter au panier
 ### Quantité
 
 Pouvoir acheter en plusieurs quantité un même livre.
+
+### Multilangue
+
+Dans le but de maximiser l'accessibilité du site, l'utilisation de la librairie **I18N** permettrait de proposer plusieurs langues sur notre application. 
+
+
 
 
 
